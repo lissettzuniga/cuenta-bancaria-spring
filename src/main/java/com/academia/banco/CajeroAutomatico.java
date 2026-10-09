@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.time.Clock;
 import java.time.LocalDate;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 /**
@@ -19,7 +20,8 @@ public class CajeroAutomatico {
     private final Notificador notificador;
     private final Clock reloj;
 
-    public CajeroAutomatico(RepositorioCuentas repositorio, ServicioAntifraude antifraude,
+    public CajeroAutomatico(RepositorioCuentas repositorio,
+                            @Qualifier("antifraudeEstricto") ServicioAntifraude antifraude,
                             Notificador notificador, Clock reloj) {
         this.repositorio = repositorio;
         this.antifraude = antifraude;
