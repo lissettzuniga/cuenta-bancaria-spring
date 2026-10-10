@@ -38,3 +38,17 @@
 
 **5. En tu proyecto de Empleados de la Semana 3 nunca escribiste `@ComponentScan`. ¿Quién lo hace?**
 > Lo hace la anotación `@SpringBootApplication`. Al inspeccionar sus metadatos, se observa que está meta-anotada con `@ComponentScan`, `@EnableAutoConfiguration` y `@SpringBootConfiguration`, por lo que escanea automáticamente el paquete donde se ubica la clase principal y todos sus subpaquetes.
+
+# Preguntas de Java — Temas 1 al 6
+
+## 01 · Fundamentos: tipos, operadores y casting (24 preguntas)
+
+## 02 · Control de flujo (20 preguntas)
+
+## 03 · Strings y clases envoltorio (12 preguntas)
+
+## 04 · Arreglos (9 preguntas)
+
+## 05 · Clases, métodos y constructores (24 preguntas)
+
+## 06 · Modificadores, static e inicialización(13 preguntas)
